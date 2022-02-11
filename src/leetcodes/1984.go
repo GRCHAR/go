@@ -5,17 +5,17 @@ import (
 )
 
 
-func minimumDifference(nums []int, k int) int {
+func MinimumDifference(nums []int, k int) int {
 	if k == 1 {
 		return 0
 	}
 	
 	sort.Ints(nums)
-	minValue := nums[1] - nums[0]
+	minValue := nums[k-1] - nums[0]
 
-	for i := 2; i < len(nums); i++ {
-		if nums[i] - nums[i-1] < minValue {
-			minValue = nums[i] - nums[i-1]
+	for i := k; i < len(nums); i++ {
+		if nums[i] - nums[i-k+1] < minValue {
+			minValue = nums[i] - nums[i-k+1]
 		}
 	}
 	return minValue

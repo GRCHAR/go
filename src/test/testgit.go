@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(leetcodes.MaxProducts([]int{0, 2}))
 
+	fmt.Println(leetcodes.MinimumDifference([]int{87063, 61094, 44530, 21297, 95857, 93551, 9918}, 6))
 }
