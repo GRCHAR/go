@@ -1,7 +1,11 @@
-package test
+package main
 
-import "fmt"
+import (
+	"fmt"
+	"go/go/src/leetcodes"
+)
 
-func test() {
-	fmt.Print("test")
+func main() {
+	fmt.Println(leetcodes.MaxProducts([]int{0, 2}))
+
 }
